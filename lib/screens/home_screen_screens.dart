@@ -23,51 +23,60 @@ class MyScreen extends StatelessWidget {
       body:
       Column(
         verticalDirection: VerticalDirection.up,
-        mainAxisSize: MainAxisSize.max,
+        mainAxisSize: MainAxisSize.min,
 
         children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+            children: [
+              TextButton(
+
+                child: Text(
+                  "Sign up",
+                  style: TextStyle(fontSize: 25),
+
+                ),
+
+                onPressed: () {},
+                style: TextButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    elevation: 2,
+                    backgroundColor: Colors.blue),
+              ),
+
+              TextButton(
+
+                child: Text(
+                  "Login",
+                  style: TextStyle(fontSize: 25),
+
+                ),
+
+                onPressed: () {},
+                style: TextButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    elevation: 2,
+                    backgroundColor: Colors.blue),
+              ),
+
+            ],
+          ),
+
           TextButton(
             child: Text(
               "Get started",
               style: TextStyle(fontSize: 25),
             ),
 
-            onPressed: () {},
+            onPressed: () =>null,
             style: TextButton.styleFrom(
                 foregroundColor: Colors.white,
                 elevation: 2,
                 backgroundColor: Colors.blue),
           ),
-Row(  crossAxisAlignment: CrossAxisAlignment.end,
-  mainAxisAlignment: MainAxisAlignment.end,),
-          TextButton(
 
-            child: Text(
-              "Get started",
-              style: TextStyle(fontSize: 25),
-
-            ),
-
-            onPressed: () {},
-            style: TextButton.styleFrom(
-                foregroundColor: Colors.white,
-                elevation: 2,
-                backgroundColor: Colors.blue),
-          ),
-          TextButton(
-
-            child: Text(
-              "Get started",
-              style: TextStyle(fontSize: 25),
-
-            ),
-
-            onPressed: () {},
-            style: TextButton.styleFrom(
-                foregroundColor: Colors.white,
-                elevation: 2,
-                backgroundColor: Colors.blue),
-          ),
           Image.asset('assets/img1.jpg',height: 350,),
           const Text("Welcome back", style: TextStyle(fontSize: 30,fontWeight:FontWeight.bold )),
 
