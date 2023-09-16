@@ -22,15 +22,55 @@ class MyScreen extends StatelessWidget {
 
       body:
       Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.start,
         verticalDirection: VerticalDirection.up,
-        mainAxisSize: MainAxisSize.min,
+        mainAxisSize: MainAxisSize.max,
 
         children: [
-          const Mycol(txt: "Get started", clr: Colors.blue, icon: Icons.add),
+          TextButton(
+            child: Text(
+              "Get started",
+              style: TextStyle(fontSize: 25),
+            ),
+
+            onPressed: () {},
+            style: TextButton.styleFrom(
+                foregroundColor: Colors.white,
+                elevation: 2,
+                backgroundColor: Colors.blue),
+          ),
+Row(  crossAxisAlignment: CrossAxisAlignment.end,
+  mainAxisAlignment: MainAxisAlignment.end,),
+          TextButton(
+
+            child: Text(
+              "Get started",
+              style: TextStyle(fontSize: 25),
+
+            ),
+
+            onPressed: () {},
+            style: TextButton.styleFrom(
+                foregroundColor: Colors.white,
+                elevation: 2,
+                backgroundColor: Colors.blue),
+          ),
+          TextButton(
+
+            child: Text(
+              "Get started",
+              style: TextStyle(fontSize: 25),
+
+            ),
+
+            onPressed: () {},
+            style: TextButton.styleFrom(
+                foregroundColor: Colors.white,
+                elevation: 2,
+                backgroundColor: Colors.blue),
+          ),
           Image.asset('assets/img1.jpg',height: 350,),
           const Text("Welcome back", style: TextStyle(fontSize: 30,fontWeight:FontWeight.bold )),
+
         ],
 
       ),
