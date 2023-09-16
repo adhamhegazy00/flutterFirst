@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled2/widget/my_col_widget.dart';
 
 
 class MyScreen extends StatelessWidget {
@@ -27,19 +28,13 @@ class MyScreen extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
 
         children: [
-
-          const Text("WELCOME", style: TextStyle(fontSize: 45)),
-
-
-
-
-          Image.asset('assets/img1.jpg',height: 350,)
-
-
-
+          const Mycol(txt: "Get started", clr: Colors.blue, icon: Icons.add),
+          Image.asset('assets/img1.jpg',height: 350,),
+          const Text("Welcome back", style: TextStyle(fontSize: 30,fontWeight:FontWeight.bold )),
         ],
 
       ),
+
 
     );
   }

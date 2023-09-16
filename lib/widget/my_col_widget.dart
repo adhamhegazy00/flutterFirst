@@ -11,12 +11,14 @@ class Mycol extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Column( children: [Container(
-      width: 50,
+    return  Column
+      ( children: [Container(
+      width: 150,
       height: 50,
       color: clr,
       margin: const EdgeInsets.all(10),
-      child:  Icon(icon,),
+      child: Text(txt),
+      // child:  Icon(icon,),
     )
 
 
