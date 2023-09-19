@@ -9,8 +9,7 @@ class Myrow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context,) {
-    return const Row(crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisAlignment: MainAxisAlignment.end,
+    return const Row(
       children:[
         Mycol(txt:'Welcome' ,
             clr: Colors.cyan, 
